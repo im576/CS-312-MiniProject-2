@@ -1,0 +1,19 @@
+{
+  "name": "mini_p2",
+  "version": "1.0.0",
+  "description": "Cocktails Search - Mini Project 2",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.19.2",
+    "ejs": "^3.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

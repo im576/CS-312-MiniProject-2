@@ -1,0 +1,85 @@
+
+
+
+/* borders */
+*{box-sizing:border-box}
+
+
+body{
+  font-family:system-ui,Arial,sans-serif;
+  margin:0;
+
+/* light green background */
+  background:#cff9a1;
+
+/* dark blue text */
+  color:#1113a9;
+}
+
+
+/* Center */
+.wrap{
+  max-width:720px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+
+
+/* Spacin */
+h1,h2,h3{margin:.5rem 0 1rem}
+
+
+.card{
+
+/* light green box color */
+  background:#cfe97f;
+  padding:1rem;
+  border-radius:12px;
+  margin:1rem 0;
+/* border color */
+  border:1px solid #99ffa8;
+}
+
+/* style inputs and buttons */
+input,button{
+  padding:.6rem .8rem;
+  border-radius:8px;
+  border:1px solid #2a2a2a;
+  background:#bdfbe6;
+  color:#4d00a0;
+}
+
+button{cursor:pointer}
+
+/* rounded images */
+img{
+  display:block;
+  border-radius:12px;
+  margin:.5rem 0;
+}
+
+/* error */
+.alert{
+  background:#2b1d1d;
+  color:#f7b1b1;
+  border:1px solid #5a2a2a;
+  padding:.6rem .8rem;
+  border-radius:8px;
+  margin:1rem 0;
+}
+
+
+
+/* style links */
+.link{color:#9bd}
+
+label{
+  display:block;
+  margin-bottom:.25rem;
+}
+
+/* line up */
+form.card{
+  display:grid;
+  gap:.5rem;
+}

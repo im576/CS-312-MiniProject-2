@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- show cocktail name -->
+  <title><%= drink.strDrink %> — Cocktails Search</title>
+
+  <!-- style link -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- main container -->
+  <main class="wrap">
+
+    <!-- homepage -->
+    <a href="/" class="link">← Back</a>
+
+    <!-- random or search? -->
+    <h2><%= mode %></h2>
+
+
+    <!-- drink info -->
+    <article class="card">
+
+
+      <!-- drink name -->
+      <h1><%= drink.strDrink %></h1>
+
+
+      <!-- drink image -->
+      <img src="<%= drink.strDrinkThumb %>" alt="<%= drink.strDrink %>" width="320" />
+
+
+      <!-- list ingredients -->
+      <h3>Ingredients</h3>
+      
+      <ul>
+
+        <% for (let i = 1; i <= 15; i++) { 
+             const ing = drink['strIngredient' + i]; // ingredient
+             const mea = drink['strMeasure' + i];   // measurement
+             if (!ing) break; // stop if no more ingredients
+        %>
+
+          <!-- measurement and ingredients -->
+          <li><%= mea ? (mea + ' ') : '' %><%= ing %></li>
+        <% } %>
+      </ul>
+
+
+      <!-- instructions -->
+      <h3>Instructions</h3>
+      <p><%= drink.strInstructions || 'No instructions provided.' %></p>
+
+    </article>
+
+  </main>
+</body>
+</html>

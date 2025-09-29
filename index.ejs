@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- title -->
+  <title>Cocktails Search</title>
+
+
+  <!-- style link -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+
+  <!-- center content container -->
+  <main class="wrap">
+
+
+    <!-- big heading -->
+    <h1>Cocktails Search</h1>
+
+
+    <!-- description -->
+    <p>Search by cocktail name, or randomize one.</p>
+
+
+    <!-- error -->
+    <% if (error) { %>
+      <div class="alert"><%= error %></div>
+    <% } %>
+
+    <!-- form search -->
+    <form action="/search" method="POST" class="card">
+      <label for="q">Cocktail name</label>
+
+
+      <!-- input drink name -->
+      <input id="q" name="q" placeholder="e.g., Margarita" />
+
+
+      <!-- send form -->
+      <button type="submit">Search</button>
+
+    </form>
+
+    <!-- randomize -->
+    <form action="/random" method="POST" class="card">
+      <button type="submit">Random Cocktail</button>
+
+    </form>
+  </main>
+</body>
+</html>
